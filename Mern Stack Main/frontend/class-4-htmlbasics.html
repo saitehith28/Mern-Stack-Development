@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                color:red;
+                font-size: 30px;
+                background-color: cyan;
+            }
+            table,th,td{
+                border: 2px solid black;
+            }
+        </style>
+        <title>html basics</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h4>Normal</h4>
+        <a href="https://anurag.edu.in/">anurag</a>
+        <h4>_blank</h4>
+        <a href="https://anurag.edu.in/" target="_blank">anurag</a> <!--Opens in new tab/window-->
+        <h4>_parent</h4>
+        <a href="https://anurag.edu.in/" target="_parent" >anurag</a> <!--Opens in parent window-->
+        <h4>_self</h4>
+        <a href="https://anurag.edu.in/" target="_self" >anurag</a> <!--Opens in same window this is default-->
+        <h4>_top</h4>
+        <a href="https://anurag.edu.in/" target="_self" >anurag</a> <!--Opens in full browser-->
+        <h1>picture href</h1>
+        <a href="https://anurag.edu.in/"><img src="D:\Mern Stack\Mern Stack Main\Tehithpic.jpg" alt="tehithpic"></a>
+
+        <h1>Types of Styles in HTML</h1>
+        <h3>Inline Style</h3>
+        <p style="color:red;font-size: 30px;background-color: blue;">Hello Paragraph</p>
+
+        <h3>Embedded Style</h3>
+        <p>Hello Paragraph</p>
+
+        <h3>External Style Sheet</h3>
+        <div>Hello div</div>
+        <p>Hello paragraph</p>
+
+        <h1>Images in HTML</h1>
+        <img src="D:\Mern Stack\Mern Stack Main\Tehithpic.jpg" alt="tehithpic" width="200px" height="300px">
+
+        <h1>Tables in HTML</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Roll</th>
+            </tr>
+            <tr>
+                <td>Tehith</td>
+                <td>20</td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td>Akhila</td>
+                <td>19</td>
+                <td>239</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+                <th>Roll</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Tehith</td>
+                <td>20</td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td>Akhila</td>
+                <td>19</td>
+                <td>239</td>
+            </tr>
+        </table>
+
+
+    </body>
+</html>
