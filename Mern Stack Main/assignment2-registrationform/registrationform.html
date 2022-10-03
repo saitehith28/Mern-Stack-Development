@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                border:1px solid black;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h1 style="text-align:center">Registration Form</h1>
+        <div class="table">
+            <table>
+                <form action="success.html">
+                    <tr>
+                        <td>
+                            <label for="">Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" value="" placeholder="Enter your username" >
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <label for="">User-Id</label>
+                        </td>
+                        <td>
+                            <input type="text" name="userid" value="" placeholder="Enter your user id" >
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <label for="">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" value="" placeholder="Enter your email" >
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <label for="">Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" value="" placeholder="Enter your password" >
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <label for="">Date of Birth</label>
+                        </td>
+                        <td>
+                            <input type="date" name="dob" value="" placeholder="Enter your DOB">
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <label for="">Gender</label>
+                        </td>
+                        <td>
+                            <label for="">Male</label>
+                            <input type="radio" name="gender">
+                            <label for="">Female</label>
+                            <input type="radio" name="gender">
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <label for="">Skills</label>
+                        </td>
+                        <td>
+                            <label for="">C</label>
+                            <input type="checkbox" name="course">
+                            <label for="">C++</label>
+                            <input type="checkbox" name="course">
+                            <label for="">Python</label>
+                            <input type="checkbox" name="course">
+                            <label for="">DSA</label>
+                            <input type="checkbox" name="course">
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <label for="">Country</label>
+                        </td>
+                        <td>
+                            <select name="country" id="">
+                                <option value="">India</option>
+                                <option value="">USA</option>
+                                <option value="">Australia</option>
+                                <option value="">UK</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <label for="">Upload your resume</label>
+                        </td>
+                        <td>
+                            <input type="file" name="resume" value="" placeholder="resume" >
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <label for="">About Yourself</label>
+                        </td>
+                        <td>
+                            <textarea name="about" id="" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit">
+                        </td>
+                        <td>
+                            <input type="reset" name="reset">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </body>
+</html>

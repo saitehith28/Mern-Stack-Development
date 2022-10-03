@@ -1,0 +1,97 @@
+UI --> html,css,bootstrap,js,react.js
+
+Backend --> Nodejs,Express
+
+DB --> MongoDB
+{
+    Name:Tehith
+    Age:20
+}
+GRAPHQL --> get result of user through age or name it will return response through single api . Design once use many times . 
+
+Deployment --> AWS Services
+
+Completely called Full Stack
+
+Code Version Tool we use USE
+
+Code Editor is VS Code
+
+1. You enter one url/address of your application
+2. DNS Server 
+    Google.com IP is 102.30.50.87
+    it will map the IP
+
+    browser,client-----request-----server-----DB Server
+
+
+    What is git ?
+    It is a code versioning tool.
+
+    Open the github.com and signup
+    Once you signup you will get dashboard with no repository
+
+    html --> hyper text markup language 
+    made up of complete tags
+
+    <!Doctype html> is dtd that will tell the browser which version of html we are using .
+
+start tag and end tag
+<h1>  content   </h1>
+element in html is nothing but combination of opening tag content and closing tag.
+
+Block level elements:The elements which start always with new line are called Block level elements . All block level elements will take full width of page.
+Ex: h1,p,div
+
+Inline elements:Elements which does not start with new line is called Inline elements and its width is equal to its content width.
+Ex:<a> <span>
+
+<span>-->inline <div>-->block
+
+semantic tag and non semantics tag
+<header>
+</header> meaningful for both developer and browser (semantics)
+
+<footer>
+</footer>
+
+<div> (non semantics)
+
+table --> for creating tables
+tr--> table row
+th--> table heading
+td--> table data
+
+List items in html
+
+two types of list
+
+unordered <ul>
+ordered <ol>
+list item <li>
+
+attributes-additional information about any element or tag.
+style is common attribute for all tagswhat is html form
+
+
+html form
+
+what is html form
+
+HTML forms are required to collect user input.
+
+type="text"
+type="radio"
+
+<form name="" method=get/post action="">
+
+use of doctype html --> version of html
+semantics means meaningful for both developer and browser
+block and inline
+difference between html elements opening content closing
+self closing tags have no content 
+
+asg:create registration form
+create a navigation menu bar horizontally
+
+home aboutus contactus login/signup

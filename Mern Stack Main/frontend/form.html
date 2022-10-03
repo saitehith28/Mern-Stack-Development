@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .form-input{
+                padding:20px;
+                margin:10px;
+            }
+        </style>
+        <title>form demo</title>
+    </head>
+    <body>
+        <div>
+            <form name="registrationform" action="signup.html" method="post"> <!--get-->
+                <div class="form-input">
+                    <label for="">Enter first name</label>
+                    <input type="text" name="fname" value="" placeholder="Enter first name" required>
+                </div>
+                
+                <div>
+                    <label for="">Enter last name</label>
+                    <input type="text" name="lname" value="" placeholder="Enter last name">
+                </div>
+    
+                <div>
+                    <label for="">Email:</label>
+                    <input type="email" name="email" value="" placeholder="Enter your email">
+                </div>
+    
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" name="password" value="" placeholder="Enter your password">
+                </div>
+    
+                <div>
+                    <label for="">DOB</label>
+                    <input type="date" name="dob" value="" placeholder="mm//dd//yyyy">
+                </div>
+    
+                <div>
+                    <label for="">Profile pic</label>
+                    <input type="file" name="profilepic" value="" placeholder="Enter file">
+                </div>
+    
+                <div>
+                    <label for="">Gender</label>
+                    <label for="">Male</label>
+                    <input type="radio" name="male">
+                    <label for="">Female</label>
+                    <input type="radio" name="female">
+                </div>
+    
+                <div>
+                    <label for="">btech</label>
+                    <input type="checkbox" name="courses">
+                    <label for="">mtech</label>
+                    <input type="checkbox" name="courses">
+                </div>
+    
+                <div>
+                    <label for="">Country</label>
+                    <select name="country" id="">
+                        <option value="india">India</option>
+                        <option value="aus">Australia</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="">Address</label>
+                    <textarea type=""></textarea>
+                </div>
+    
+                <div>
+                    <input type="submit" name="button"> <!--value="submit"-->
+                    <input type="reset" value="reset data">
+                </div>
+            </form>
+        </div>      
+    </body>
+</html>

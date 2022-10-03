@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #p1{
+                color: blue;
+            }
+            #p2{
+                color: red;
+            }
+            .mark{
+                color: blueviolet;
+            }
+            .mark2{
+                background-color: cyan;
+            }
+        </style>
+        <title>html basics</title>
+    </head>
+
+    <body>
+        <h1>First Html Page</h1>
+        <p>This is paragraph</p>
+
+        <h1>Image</h1>
+        <img src="D:\Mern Stack\Mern Stack Main\Tehithpic.jpg" width="200px" height="400px" alt="Tehith image">
+
+        <h1>Block Elements</h1>
+        <p>This is block level element.Because it always start with new line and takes full width of web page even if content is small.Examples are h1 and p</p>
+        
+        <h1>Inline Elements</h1>
+        <p>Does not start with new line and width is equal to width of its content.They appear side by side</p>
+        <p>Examples are</p>
+        <a href="google.com">google.com</a>
+        <a href="facebook.com">facebook.com</a>
+        <img src="D:\Mern Stack\Mern Stack Main\Tehithpic.jpg" width="50px" height="100px" alt="Tehith image">
+        <img src="D:\Mern Stack\Mern Stack Main\Tehithpic.jpg" width="50px" height="100px" alt="Tehith image">
+
+        <h1>Attributes id="p1" id="p2"</h1>
+        <p id="p1">Hello Paragraph-1</p>
+        <p id="p2">Hello Paragraph-2</p>
+
+        <h1>Attributes id="p1 p2" id="p2"</h1>
+        <p id="p1 p2">Hello Paragraph-1</p>
+        <p id="p2">Hello Paragraph-2</p>
+
+        <h1>Attributes id="c d" id="c"</h1>
+        <p id="c d">Hello Paragraph-1</p>
+        <p id="c">Hello Paragraph-2</p>
+
+        <h1>Attributes id="a" id="a"</h1>
+        <p id="a">Hello Paragraph-1</p>
+        <p id="a">Hello Paragraph-2</p>
+
+        <h1>Class Attribute</h1>
+        <p class="mark mark2">Class paragraph-1</p>
+        <p class="mark">Class paragraph-2</p>
+        <h3 class="mark">Class heading 3</h3>
+
+        <h1>Style Attribute</h1>
+        <h1 style="color:blue;font-size:20px">This is style attribute heading</h1>
+
+        <h1>Types of Headings in HTML</h1>
+        <h1>Heading-1</h1>
+        <h2>Heading-2</h2>
+        <h3>Heading-3</h3>
+        <h4>Heading-4</h4>
+        <h5>Heading-5</h5>
+        <h6>Heading-6</h6>
+        <p>This is the paragraph tag</p>
+
+        <h1>Text Formatting in HTML</h1>
+        <h4>Strong</h4>
+        <p>My name is <strong>Tehith</strong></p>
+
+        <h4>Del</h4>
+        <p>My name is <del>Sai Tehith</del>Tehith</p>
+        
+        <h4>Super</h4>
+        <p>My name is <sup>Tehith</sup></p>
+        <p>x <sup>3</sup></p>
+
+        <h4>Sub</h4>
+        <p>My name is <sub>Tehith</sub></p>
+        <p>log<sub>2</sub>10</p>
+
+        <h4>Mark</h4>
+        <p>My name is <mark>Tehith</mark></p>
+
+        <h4>Underline</h4>
+        <p>My name is <u>Tehith</u></p>
+
+        <h4>Bold</h4>
+        <p>My name is <b>Tehith</b></p>
+
+        <h4>Italic</h4>
+        <p>My name is <i>Tehith</i></p>
+
+        
+
+        <script>
+            document.getElementById("p1").innerHTML="Hello modified";
+            document.getElementById("c").innerHTML="Hello modified";
+            document.getElementById("a").innerHTML="Hello modified";
+        </script>
+    </body>
+</html>
