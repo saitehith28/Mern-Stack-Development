@@ -80,6 +80,103 @@
             </tr>
         </table>
 
+        <h1>HTML Lists</h1>
 
+        <h2>Ordered List</h2>
+        <ol>
+            <li>Tehith</li>
+            <li>Teja</li>
+            <li>Chinna</li>
+        </ol>
+
+        <h4>Using style tag</h4>
+        <ol style="list-style-type:upper-roman">
+            <li>Tehith</li>
+            <li>Teja</li>
+            <li>Chinna</li>
+        </ol>
+
+        <h2>Unordered List</h2>
+        <ul>
+            <li>Tehith</li>
+            <li>Teja</li>
+            <li>Chinna</li>
+        </ul>
+
+        <h4>Using style tag</h4>
+        <ul style="list-style-type:circle">
+            <li>Tehith</li>
+            <li>Teja</li>
+            <li>Chinna</li>
+        </ul>
+
+        <h1>HTML Forms</h1>
+        <div>
+            <form name="registrationform" action="signup.html" method="post"> <!--get-->
+                <div class="form-input">
+                    <label for="">Enter first name</label>
+                    <input type="text" name="fname" value="" placeholder="Enter first name" required>
+                </div>
+                
+                <div>
+                    <label for="">Enter last name</label>
+                    <input type="text" name="lname" value="" placeholder="Enter last name">
+                </div>
+    
+                <div>
+                    <label for="">Email:</label>
+                    <input type="email" name="email" value="" placeholder="Enter your email">
+                </div>
+    
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" name="password" value="" placeholder="Enter your password">
+                </div>
+    
+                <div>
+                    <label for="">DOB</label>
+                    <input type="date" name="dob" value="" placeholder="mm//dd//yyyy">
+                </div>
+    
+                <div>
+                    <label for="">Profile pic</label>
+                    <input type="file" name="profilepic" value="" placeholder="Enter file">
+                </div>
+    
+                <div>
+                    <label for="">Gender</label>
+                    <label for="">Male</label>
+                    <input type="radio" name="male">
+                    <label for="">Female</label>
+                    <input type="radio" name="female">
+                </div>
+    
+                <div>
+                    <label for="">btech</label>
+                    <input type="checkbox" name="courses">
+                    <label for="">mtech</label>
+                    <input type="checkbox" name="courses">
+                </div>
+    
+                <div>
+                    <label for="">Country</label>
+                    <select name="country" id="">
+                        <option value="india">India</option>
+                        <option value="aus">Australia</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="">Address</label>
+                    <textarea type=""></textarea>
+                </div>
+    
+                <div>
+                    <input type="submit" name="submitbutton"> <!--value="submit"-->
+                    <input type="reset" name="resetbutton"> <!--value="reset"-->
+                </div>
+            </form>
+        </div>
     </body>
 </html>
+
