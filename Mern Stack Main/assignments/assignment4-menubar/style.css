@@ -1,0 +1,50 @@
+.main{
+    list-style-type: none;
+    background-color:rgb(215, 225, 235);
+    width: 550px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.mainli{
+    display: inline;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+.mainli:hover a{
+    background-color: black;
+    color: white;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    width: 80px;
+    height: 30px;
+    background-color: black;
+}
+.nested{
+    list-style-type: none;
+    text-align: left;
+}
+.submain{
+    display: none;
+    background-color:rgb(215, 225, 235);
+}
+.course:hover .submain{
+    display: block;
+    position: absolute;
+    background-color: rgb(215, 225, 235);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.subli:hover a{
+    background-color:white;
+    color: black;
+}
