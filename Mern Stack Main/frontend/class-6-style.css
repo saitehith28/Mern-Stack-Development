@@ -1,0 +1,35 @@
+*{
+    padding: 5px;
+    margin: 20px;
+}
+h3{
+    background-color: aqua;
+    color: green;
+}
+h4{
+    background-color: aqua;
+    color: blue;
+}
+#id-selector{
+    background-color: blueviolet;
+    color:chartreuse
+}
+#id-div{
+    background-color: bisque;
+    color: blueviolet;
+    width: 125px;
+    height: 125px;
+}
+.class-selector{
+    background-color: coral;
+    color: azure;
+}
+ul > li{
+    color: red;
+}
+#id-ul > li{
+    color: blue;
+}
+.class-ul > li{
+    color: green;
+}
