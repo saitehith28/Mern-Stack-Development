@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box1{
+            background-color: red;
+            width: 125px;
+            height: 125px;
+        }
+    </style>
+    <title>jsdemo</title>
+</head>
+<body>
+    <div class="box1" id="box">
+        <p>Click on button to change color</p>
+    </div>
+    <button onclick="changeMe()">change me</button>
+
+    <!--Third method of adding js-->
+    <button onclick="alert('I am inline js')">Inline</button>
+
+    <!--Second method of adding js-->
+    <script src="script.js"></script>
+    
+    <!--First method of adding js-->
+    <!-- <script>
+        function changeMe(){
+            document.getElementById("box").innerHTML="color changed";
+            document.getElementById("box").style.backgroundColor="blue";
+        }
+        var a=30,b=40;
+        console.log(a+b);
+        alert("Hello I am alert");
+        var a=prompt("Enter the number:");
+        
+    </script> -->
+</body>
+</html>
