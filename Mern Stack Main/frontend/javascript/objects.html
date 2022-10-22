@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>objects</title>
+    </head>
+
+    <body>
+        <script>
+            var a=30;
+            console.log(a,this,window);
+            // this refers to current object
+            // window means current object of window . Example the opeing tab 
+            document.write("Hello");
+
+            function sayHello(){
+                // console.log(this,window);
+                console.log("Hello inside window from this");
+            }
+            // window.sayHello();
+            this.sayHello();
+            // sayHello(); window is calling sayHello() by default 
+
+            var name="Tehith";
+            var user={
+                name:"Sai Tehith",
+                show:function(){
+                    console.log(this);
+                    console.log(this.name);
+                }
+            }
+            // console.log(user.name);
+            user.show();
+
+            // if your fuction is in yout=r object this will point your object
+            // if outside , this will point window
+
+            
+            var user2={
+                name:"Sai Teja",
+            }
+            user.show.call(user2);
+
+            
+            // call,apply,bind are three invoking functions you can change content of function at runtime 
+            
+        </script>
+    </body>
+</html>
