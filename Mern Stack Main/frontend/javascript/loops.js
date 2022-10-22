@@ -56,3 +56,16 @@ if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
 console.log("Vowel");
 else
 console.log("Consonant");
+
+function checkEven(){
+    var output=document.getElementById("output")
+    output.style.backgroundColor="red"
+    var n=40;
+    if(n%2==0){
+        output.innerHTML="Number is Even"
+    }
+    else{
+        output.innerHTML="Number is Odd"
+    }
+}
+checkEven();

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>functions</title>
+    </head>
+
+    <body>
+        <script>
+            function add(a,b,c){
+                // var a=30,b=40;
+                console.log(c);
+                console.log(a+b);
+            }
+            // add();
+            function dispayUserName(){
+                console.log("Hello User");
+            }
+            // dispayUserName();
+            function checkEvenorOdd(n){
+                // var n=10;
+                if(n%2==0){
+                    console.log("Even");
+                }
+                else{
+                    console.log("Odd");
+                }
+            }
+            // checkEvenorOdd();
+            // checkEvenorOdd(39);
+            // checkEvenorOdd(40);
+            // add(39,40);
+            // add(39,40,"Tehith");
+
+            function addd(a,b){
+                // return a+b;
+                var c=a+b;
+                return c;
+            }
+            // var result=addd(39,40);
+            // console.log(result);
+            // You can return number string array object anything from function
+
+            function sayHello(msg){
+                return function greet(){
+                    console.log("Hello ",msg);
+                }
+            }
+            // console.log(sayHello());
+
+            function sayHelloo(msg){
+                return function greet(){
+                    return "Hello from inner"
+                }
+            }
+            // var result=sayHelloo();
+            // console.log(result());
+            // console.log(sayHelloo());
+
+            // Function can return function also
+
+            function add(a,b=3){
+                return a+b;
+            }
+            // var result=add(39);
+            // console.log(result);
+            // var result=add(39,40);
+            // console.log(result);
+
+            function add_arg(){
+                // console.log(arguments);
+                var sum=0;
+                for(i=0;i<arguments.length;i++){
+                    // console.log(arguments[i]);
+                    sum+=arguments[i];
+                }
+                return sum;
+            }
+            console.log(add_arg(2));
+            console.log(add_arg(2,4,6,8,10));
+        </script>
+    </body>
+</html>

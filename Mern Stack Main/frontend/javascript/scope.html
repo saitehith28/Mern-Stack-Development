@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>scope</title>
+    </head>
+
+    <body>
+        <script>
+            var age=20;
+            // console.log(age);
+            function greet(){
+                var x=40;
+                // console.log(age);
+                console.log(x);
+            }
+            // greet();
+            // console.log(x);
+
+
+            {
+                let a=20;
+                // console.log(a);
+            }
+            // console.log(a);
+
+
+            // let and const used to declare variables
+            // let is used to declare block scope
+
+            {
+                var x=200;
+                let y=400;
+            }
+            // console.log(x);
+            // console.log(y);
+
+
+
+            // console.log(myage);
+            // var myage=20;
+            // console.log(myage);
+
+
+
+            // Hoisting in js , if we are declaring after one print statement
+            // it will automatically defined at the top wth var x=undefined and value
+            // is assigned when it is declared in the program
+
+
+
+            function greet_(){
+                // var msg=undefined       the engine will do like this
+                console.log(msg);
+                var msg="Hello Good Morning!";
+                console.log(msg);
+            }
+            // greet_();
+
+
+
+            // tdz = temproral dead zone
+            // let a;
+            //     This area is called temproral dead zone
+            // a=20;
+
+
+
+            function greet_2(){
+                console.log(msg);
+                let msg="Hello Good Morning!";
+                console.log(msg);
+            }
+            // greet_2();
+
+
+
+            // This is not possible using let keyword 
+            // Cannot access msg before initialization
+
+            var a=function show(){
+                console.log("Hello");
+            }
+            // console.log(a());
+            // Function Expresion : When you are assigning a function as a value to a variable  
+
+            function greet_3(){
+                console.log("Good Morning");
+            }
+            function sayHello(a){
+                console.log(a);
+                console.log("Hello");
+            }
+            sayHello(greet_3);
+
+
+
+            function greet_4(){
+                console.log("Good Morning");
+            }
+            function sayHelloo(a){
+                a();
+                console.log("Hello");
+            }
+            sayHelloo(greet_4);
+
+            // When you pass function as a parameter it is called higher order function
+        </script>
+    </body>
+</html>
