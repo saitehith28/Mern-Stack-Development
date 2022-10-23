@@ -15,12 +15,17 @@
             function sayHello(){
                 // console.log(this,window);
                 console.log("Hello inside window from this");
+                // console.log(this);
             }
             // window.sayHello();
-            this.sayHello();
+            // this.sayHello();
+            // sayHello();
             // sayHello(); window is calling sayHello() by default 
 
             var name="Tehith";
+
+            
+            // Object Literal
             var user={
                 name:"Sai Tehith",
                 show:function(){
@@ -29,7 +34,7 @@
                 }
             }
             // console.log(user.name);
-            user.show();
+            // user.show();
 
             // if your fuction is in yout=r object this will point your object
             // if outside , this will point window
@@ -38,11 +43,78 @@
             var user2={
                 name:"Sai Teja",
             }
-            user.show.call(user2);
+            // user.show.call(user2);
 
             
-            // call,apply,bind are three invoking functions you can change content of function at runtime 
+            // call,apply,bind are three invoking functions you can change context or runtime object of function at runtime 
+            var person={
+                name:"Person1"
+            }
+            // user.show.apply(person);
+            // let returnedfn=user.show.bind(person);
+            // console.log(returnedfn);
+
+            let employee1={
+                name:"Tehith",
+                age:20,
+                address:"Vmd",
+                displayInfo:function(greet){
+                    console.log("Name:",this.name,greet);
+                    console.log("Age:",this.age,greet);
+                    console.log("Address:",this.address),greet;
+                }
+            }
+            employee1.displayInfo();
+            let employee2={
+                name:"Teja",
+                age:22,
+                address:"Vmd",
+            }
+            employee1.displayInfo.call(employee2,"Good Morning");
+            employee1.displayInfo.apply(employee2,["Good Morning"]);
+            let result=employee1.displayInfo.bind(employee2);
+            console.log(result);
+            console.log(result());
+
+            function show(){
+                console.log("Show",this);
+            }
+            show();
             
+            // Difference between call and apply is
+            // call can pass argument as string
+            // apply can pass an argument in array
+            // bind will return that function
+
+
+            //Constructor function
+            function employee(){
+                this.name="Tehith",
+                this.age=20
+            }
+
+            // new operator is used to create object
+            let emp1=new employee();
+            console.log(emp1);
+            let emp2=new employee();
+            console.log(emp2);
+
+            // Passing parameters to constructor function
+            function persons(name,age){
+                console.log(this);
+                this.name=name
+                this.age=age
+                this.showInfo=function(){
+                    console.log("Info=",this.name,this.age);
+                }
+            }
+            let person1=new persons("Sai Tehith",20);
+            let person2=new persons("Sai Teja",22);
+            console.log(person1);
+            console.log(person2);
+            person1.showInfo();
+            person2.showInfo();
+            console.log(new persons("Chinna",20));
         </script>
     </body>
 </html>

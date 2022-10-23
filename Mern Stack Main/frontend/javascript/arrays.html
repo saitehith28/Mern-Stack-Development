@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arrays</title>
+    </head>
+
+    <body>
+        <script>
+            // Types of creation of Arrays
+            let a1=[1,2,3,4,5]
+            console.log(a1);
+            console.log(typeof(a1));
+            let a2=new Array(1,2,3,4);
+            console.log(a2);
+            let a3=new Array(2);
+            console.log(a3);
+            console.log(typeof(a3));
+            console.log(Array.isArray(a1));
+            console.log(Array.isArray(a2));
+            console.log(Array.isArray(a3));
+
+            // Array Accessing
+            for(i=0;i<a1.length;i++){
+                console.log(a1[i]);
+            }
+            console.log(a1[0]);
+        </script>
+    </body>
+</html>
