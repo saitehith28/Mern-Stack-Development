@@ -6,6 +6,7 @@
 
     <body>
         <script>
+
             // Types of creation of Arrays
             let a1=[1,2,3,4,5]
             console.log(a1);
@@ -19,11 +20,64 @@
             console.log(Array.isArray(a2));
             console.log(Array.isArray(a3));
 
-            // Array Accessing
+            // Accessing of Arrays
             for(i=0;i<a1.length;i++){
                 console.log(a1[i]);
             }
             console.log(a1[0]);
+
+            // Methods of Arrays
+            // push pop shift unshift
+            let a4=[20,30,40,50]
+            a4.push("Tehith");
+            console.log(a4);
+            a4.pop();
+            console.log(a4);
+            a4.shift();
+            console.log(a4);
+            a4.unshift(10);
+            console.log(a4);
+
+            // Finding Index of Element
+            console.log(a4.indexOf(30));
+            console.log(a4.indexOf(20)); //if not present -1
+
+            // Splicing in Arrays
+            console.log(a4)
+            let index=a4.indexOf(30);
+            a4.splice(index,1);
+            console.log(a4);
+
+
+
+            // Strings in JavaScript
+            let str="Hello I am Here";      //We can use single quote or double quote 
+            console.log(str);
+            console.log(str.length);
+
+            // Concatenating strings
+            let str1="Hello";
+            let str2="World";
+            console.log(str1+str2);
+
+            // IndexOf in strings
+            console.log(str.indexOf("am"));
+
+            // LastIndexOf in strings
+            str3="Hello I am here am";
+            console.log(str3.lastIndexOf("am"));
+
+            // Slice in strings
+            str4="Hello Sai Tehith";
+            console.log(str4.slice(1,4));
+
+            // Replace in strings
+            str5=str4.replace("Tehith","Teja");
+            console.log(str5);
+
+            // CharAt in strings
+            strr="Hello Sai Tehith";
+            console.log(strr.charAt(6));
         </script>
     </body>
 </html>

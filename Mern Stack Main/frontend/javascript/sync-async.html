@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sync Async</title>
+    </head>
+
+    <body>
+        <script>
+            // console.log("1");
+            // console.log("2");
+            // console.log("3");
+
+            // console.log("1");
+            // setTimeout(function(){
+            //     console.log("2");
+            // },3000);
+            // console.log("3");
+
+            // function print(){
+            //     console.log("1");
+            // }
+            // setTimeout(print,1000);
+            // console.log("3");
+
+            /*function sayHello(){
+                console.log("Hello");
+            }
+            function greet(msg,fn){
+                console.log("Hello",msg);
+                fn();
+            }
+            greet("Good Morning",sayHello);*/
+
+
+
+            // function sayHelloo(){
+            //     console.log("Hello");
+            // }
+
+            // function greett(){
+            //     console.log("Hello greet");
+            // }
+            // setTimeout(greett,3000);
+            // sayHelloo();
+
+            /*function sayHelloo2(){
+                console.log("Hello");
+            }
+
+            function greett2(fn){
+                console.log("Hello greet");
+                fn();
+            }
+            setTimeout(greett2,3000,sayHelloo2);
+
+
+            console.log("1");
+            setTimeout(function(){
+                console.log("2");
+            },3000);
+            console.log("3");*/
+
+            // event loop in js and js single threaded model
+
+
+            function getUsers(fn){
+                setTimeout(()=>{
+                    return {
+                        // name:"Tehith",
+                        // age:"20",
+                        // id:"101"
+                    }
+                    console.log("Fetching data");
+                    fn();
+                },10);
+                fn();
+            }
+
+            function showUser(){
+                console.log("Users info received from db");
+            }
+            getUsers(showUser);
+        </script>
+    </body>
+</html>
