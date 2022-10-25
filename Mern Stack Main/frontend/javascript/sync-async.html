@@ -174,21 +174,100 @@
 
 
 
-            function getPostData(callback1,callback2){
+            // function getPostData(callback1,callback2){
+            //     fetch('https://jsonplaceholder.typicode.com/todos/1')
+            //     .then(function(res){
+            //         console.log("I got the data");
+            //         callback1(callback2);
+            //     })
+            // }
+            // function displayPostData(callback2){
+            //     console.log("I am displaying post data");
+            //     callback2();
+            // }
+            // getPostData(displayPostData,last);
+            // function last(){
+            //     console.log("Execute me after all done");
+            // }
+
+
+
+            // function placeOrder(callback){
+            //     setTimeout(function(){
+            //         console.log("Placing Order");
+            //         callback();
+            //     },2000);
+            // }
+            // function pay(){
+            //     console.log("Payment Done");
+            // }
+            // placeOrder(pay);
+
+
+
+                            // Promises
+
+
+
+            // function placeOrder(){
+            //     return new Promise(function(resolve,reject){
+            //         setTimeout(function(){
+            //         console.log("Placing Order");
+            //         // resolve("Order Placed");
+            //         resolve({orderid:"240","item":"Samsung"});
+            //     },2000);
+            //     })
+            // }
+            // function pay(){
+            //     console.log("Payment Done");
+            // }
+            // placeOrder().then(function(data){
+            //     console.log(data);
+            //     pay();
+            // }).catch(function(Error){
+            //     console.log("Error occured while placing order");
+            // })
+
+
+
+            // function placeOrder(){
+            //     return new Promise(function(resolve,reject){
+            //         setTimeout(function(){
+            //         console.log("Placing Order");
+            //         // resolve("Order Placed");
+            //         reject("Order not placed , network error");
+            //     },2000);
+            //     })
+            // }
+            // function pay(){
+            //     console.log("Payment Done");
+            // }
+            // placeOrder().then(function(data){
+            //     console.log(data);
+            //     pay();
+            // }).catch(function(error){
+            //     console.log("Error occured while placing order",error);
+            // })
+
+            // let p1=new Promise(function(resolve,reject));
+            // p1.then();
+            //You can also use like this to create promises
+
+
+
+            function getPost(){
+                console.log("calling api to get data");
                 fetch('https://jsonplaceholder.typicode.com/todos/1')
                 .then(function(res){
-                    console.log("I got the data");
-                    callback1(callback2);
+                    console.log("api called successfully got the data");
+                    displaydata();
                 })
             }
-            function displayPostData(callback2){
-                console.log("I am displaying post data");
-                callback2();
+            function displaydata(){
+                console.log("Displaying data");
             }
-            getPostData(displayPostData,last);
-            function last(){
-                console.log("Execute me after all done");
-            }
+            getPost();
+
+                            // Inversion of Control
         </script>
     </body>
-</html>
