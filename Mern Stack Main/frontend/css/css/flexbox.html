@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox</title>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: row;
+                /*flex-direction: row , colum , row-reverse , column-reverse */
+                /* flex-wrap: wrap; */
+                justify-content: center; /*Horizontal*/
+                background-color: aquamarine;
+                height: 50vh;
+                align-items: center; /*vertical*/
+                align-content: center;
+            }
+            .box1{
+                height: 234px;
+                width: 345px;
+                background-color: blue;
+                /* align-self: flex-start;applys on individual div and align-self overdies default alignment by aligning top to bottom */
+                align-self: flex-start;
+                flex-grow: 5; /*applys on indivial , defines aility or flem items to grow */
+                flex-shrink: 5;
+            }
+            .box2{
+                height: 234px;
+                width: 345px;
+                background-color: red;
+                border: 5px solid black;
+                flex-grow: 2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box1">Box1</div>
+            <div class="box2">Box2</div>
+            <div class="box2">Box3</div>
+            <div class="box2">Box4</div>
+        </div>
+    </body>
+</html>

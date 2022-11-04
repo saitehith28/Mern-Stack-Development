@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>min height</title>
+        <style>
+            .container{
+                width: 350px;
+                height: 400px;
+                background-color: red;
+                min-height: 100px;
+                /* Its minimum height is 50vh even if you change the height with height attribute it wont reflect */
+                min-width: 200px;
+                height: 10px;
+                width: 20px;
+            }
+            .box{
+                width: 100px;
+                height: 200px;
+                max-width: 200px;
+                max-height: 400px;
+                background-color: aqua;
+                width: 1000px;
+                height: 2000px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam odio voluptatibus dolorem a soluta consequatur.</p>
+        </div>
+
+        <div class="box">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam odio voluptatibus dolorem a soluta consequatur.</p>
+        </div>
+    </body>
+</html>

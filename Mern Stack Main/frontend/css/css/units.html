@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>units</title>
+        <style>
+            /* html{
+                font-size: 32px;
+            } */
+            .container{
+                font-size: 40px;
+            }
+            .box{
+                /* font-size: 20px; */
+                /* font-size: 3em; em=(my parent element) parent font size multiply by child = 20*3 */
+
+                /* font-size: 3rem; */
+                /* rem= (relative to html) fontsize of html * provided value */
+                /* by default html font size is 16px */
+
+                background-color: red;
+            }
+            .box2{
+                background-color: aqua;
+                width: 100px;
+                width: 50vw;
+                /* vw=viewport width 50% of width of the screen */
+                height: 60vh;
+                /* vh=viewport height 50% of height of the screen */
+                /* % unit is relative to parent element */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <p>This is a paragraph</p>
+            <div class="box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, facere.
+            </div>
+            <div class="box2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum pariatur exercitationem magni!
+            </div>
+        </div>
+    </body>
+</html>
