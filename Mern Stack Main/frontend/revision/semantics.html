@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>semantics</title>
+        <style>
+            .box1{
+                background-color: red;
+                width: 100px;
+                height: 100px;
+            }
+            /* @media screen and (min-width:200px){
+                .box1{
+                    background-color: blue;
+                }
+            } */
+
+            @media screen and (min-width:800px){
+                .box1{
+                    background-color: blue;
+                }
+            }
+            @media screen and (max-width:720px){
+                .box1{
+                    background-color: green;
+                }
+            }
+            .parent{
+                display: flex;
+            }
+            .child1{
+                background-color: aqua;
+                width: 150px;
+                height: 150px;
+            }
+            .child2{
+                background-color: darkorange;
+                width: 150px;
+                height: 150px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>Hello div</h1>
+            </div>
+        </header>
+
+        <footer>
+            Footer
+        </footer>
+
+        <section>
+            <div>Hello I am inside <section></section></div>
+        </section>
+
+        <article>
+            Article
+        </article>
+
+        <nav>
+            <a href="">Google</a>
+            <a href="">Aboutus</a>
+            <a href="">Home</a>
+        </nav>
+
+        <div class="box1">
+            Hello
+        </div>
+
+        <div class="parent">
+            <div class="child1">Child1</div>
+            <div class="child2">Child2</div>
+        </div>
+
+        <!-- meta tag is used for optimization of web search -->
+    </body>
+</html>

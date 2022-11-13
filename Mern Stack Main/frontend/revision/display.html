@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>display</title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            .box-span{
+                background-color: cyan;
+                width: 100px;
+                height: 100px;
+                display: block;
+                /* We cant set height and width because it is inline*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            Hello in div
+        </div>
+
+        <span class="box-span">
+            Hello in span
+        </span>
+
+        <span class="box-span">
+            Hello in span
+        </span>
+    </body>
+</html>

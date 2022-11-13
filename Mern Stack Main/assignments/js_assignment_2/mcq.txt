@@ -1,0 +1,149 @@
+1. The ” var” and “function” are known as _____________.
+
+Option(D) - Declaration statements 
+Explanation - We use var keyword to declare variables and function keyword to declare function in javascript.
+
+
+2. Which of these is a correct output for the JavaScript code given below?
+
+Option(D) - Undefined / Error
+Explanation - There is no keyword / datatype like string in javascript.
+
+
+3. Which of these is known as the Equality operator used for checking whether both the values are equal?
+
+Option(B) - ==
+Explantion - We use == to check whether two values are equal.
+             We use === to check whether two values are equal along with datatype.
+
+
+4. function sayHi() {
+  console.log(name);
+  console.log(age);
+  var name = 'Lydia';
+  let age = 21;
+}
+
+sayHi();
+
+Option(D) - undefined and ReferenceError
+Explanation - This method of printing variable before declaring is called Hoisting.
+              By default js engine will declare var name=undefined in the first of function.
+              This is not possible using let keyword.
+
+
+5. for (var i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 1);
+  }
+  
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 1);
+  }
+
+Option(C) - 3 3 3 and 0 1 2
+Explanation - When I compile not understood why it is priniting like this.
+              Need Explanation.
+
+
+6.function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const lydia = new Person('Lydia', 'Hallie');
+const sarah = Person('Sarah', 'Smith');
+
+console.log(lydia);
+console.log(sarah);
+
+Option(A) - Person{firstName:"Lydia",lastName:"Hallie"} and undefined
+Explanation - lydia variable is created using the syntax of constructor function
+              In sarah new keyword is missing it will not call the constructor function
+              it is declared with const keyword hence gives undefined
+
+
+7.function sum(a, b) {
+    return a + b;
+  }
+  
+  sum(1, '2');
+Option(B) - NaN
+Explanation - We are returning from function but not printing anything.
+              If we print(a+b) it will give "12" any varibale(integer or float) concatenating(+) with string , result will be in string.
+
+
+8. let number = 0;
+console.log(number++);
+console.log(++number);
+console.log(number);
+
+Option(C) - 0 2 2
+Explanation - In first console.log the number will print first and later it will increment
+              In the second console.log the updated number =1 if we do ++number it will increment the number and print the number
+              At the end of third console.log the updated number is 2.
+
+
+9. var num = 8;
+var num = 10;
+
+console.log(num);
+
+Option(B) - 10
+Explanation - First the value of variable is 8
+              second line the variable is again declared with value 10 hence 10 will print.
+
+
+10. const obj = { a: 'one', b: 'two', a: 'three' };
+console.log(obj);
+
+Option(C) - {a:"three",b:"two"}
+Explanation - At first a is assigned with one late assigned with three 
+              hence one will be replaced with three
+
+
+11. Output of code 
+var text = 'outside';
+function logIt(){
+    console.log(text);
+    var text = 'inside';
+};
+logIt();
+
+Answer - Undefined
+Explanation - In the function first text is printed then declared.
+              By default js engine will do all the declarative statements in the first line and assigned with value undefined
+              Therefore we are getting value is undefined.
+
+
+15. Output of this code
+var length = 10;
+function fn() {
+    console.log(this.length);
+}
+
+var obj = {
+  length: 5,
+  method: function(fn) {
+    fn();
+    arguments[0]();
+  }
+};
+
+obj.method(fn, 1);
+
+Answer - 10 2
+Explanation - Not understood need explanation sir.
+
+
+16. what would following code return 
+
+console.log(typeof typeof 1);
+
+Answer - string
+Explanation - typeof(1) is 'number'
+              typeof('number') is string
+
+
+
+
+

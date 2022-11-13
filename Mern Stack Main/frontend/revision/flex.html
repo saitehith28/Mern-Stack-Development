@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>display</title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            .box-span{
+                background-color: cyan;
+                width: 100px;
+                height: 100px;
+                display: none;
+                /* We cant set height and width because it is inline*/
+            }
+            .parent{
+                /* width: 700px; */
+                height: 400px;
+                background-color: red;
+                display: flex;
+            }
+            .child1{
+                width: 200px;
+                height: 300px;
+                background-color: blue;
+            }
+            .child2{
+                width: 200px;
+                height: 300px;
+                background-color: cyan;
+            }
+            .child3{
+                width: 200px;
+                height: 300px;
+                background-color: pink;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="parent">
+            <div class="child1">Child 1</div>
+            <div class="child2">Child 2</div>
+            <div class="child3">Child 3</div>
+        </div>
+    </body>
+</html>
+<!-- inline flex horizontal scroll -->
