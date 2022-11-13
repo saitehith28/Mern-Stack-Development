@@ -142,8 +142,3 @@ console.log(typeof typeof 1);
 Answer - string
 Explanation - typeof(1) is 'number'
               typeof('number') is string
-
-
-
-
-
