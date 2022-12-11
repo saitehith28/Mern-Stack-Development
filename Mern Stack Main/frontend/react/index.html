@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React App</title>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" integrity="sha512-kp7YHLxuJDJcOzStgd6vtpxr4ZU9kjn77e6dBsivSz+pUuAuMlE2UTdKB7jjsWT84qbS8kdCWHPETnP/ctrFsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+
+    <body id="box1">
+        <script type="text/babel">
+            const username="Tehith";
+            const age=20;
+            const header=(
+                <div>
+                    <h1>Hello my name is {username}</h1>
+                    <h1>My age is {age}</h1>
+                </div>
+            )
+
+            const main=(
+                <h1>This is main section</h1>
+            )
+
+            const footer=(
+                <div>
+                    <h1>@copywrite</h1>
+                    <h1>This is footer</h1>
+                </div>
+            )
+
+            const app=(
+                <div>
+                    {header}
+                    {main}
+                    {footer}
+                </div>
+            )
+
+            const root=document.getElementById("box1");
+            ReactDOM.render(app,root);
+        </script>
+    </body>
+</html>
