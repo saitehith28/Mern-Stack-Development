@@ -1,0 +1,48 @@
+npm will install first then execute
+
+npx directly execute the file without installation
+advantage is memory
+
+
+
+
+
+Component can be function or class which returns html element.
+Components are independent of each other.
+in case of class based component it should extend React.COmponent class.
+
+
+state and props ----
+
+props --> means properties
+passes data from parent to child
+props is immutable
+
+
+state is applicable for class
+before react 16.8 version class component is used for maintaining state
+before react 16.8 version there was no concept to maintain the state in functional component.
+before 16.8 functional company duty was only to display data
+but after 16.8 state is used inside functional component as well through react hooks useState()
+
+
+state is a variable that will contain our component data.
+
+We can modify the state data but cannot modify the props data.
+props is used to pass data from parent to child and state is for its local data.
+state is a local data for component.
+
+Component create as a function or create as a class maintain state and return html element.
+
+                ----In JavaScript----
+function Demo(){
+    var a=10;
+    setA(){
+        a=20;
+    }
+}
+
+                ----In React----
+function Demo(){
+    const [name,setName]=useState("Tehith");
+}
