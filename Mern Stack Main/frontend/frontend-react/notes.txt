@@ -6,7 +6,7 @@ advantage is memory
 
 
 
-
+Component should start with UpperCase
 Component can be function or class which returns html element.
 Components are independent of each other.
 in case of class based component it should extend React.COmponent class.
@@ -24,6 +24,9 @@ before react 16.8 version class component is used for maintaining state
 before react 16.8 version there was no concept to maintain the state in functional component.
 before 16.8 functional company duty was only to display data
 but after 16.8 state is used inside functional component as well through react hooks useState()
+
+useState will return two functions
+one is value and another is to set that value
 
 
 state is a variable that will contain our component data.
@@ -46,3 +49,113 @@ function Demo(){
 function Demo(){
     const [name,setName]=useState("Tehith");
 }
+
+
+
+
+
+                ----ES6 Features----
+It is called ECMAScript6.
+It is called modern JavaScript.
+We have covered the promises,classes,let,const.
+
+
+
+1.Template Literals---->
+
+before-->
+let str1="Hello"
+let str2="World"
+str1+str2
+
+after-->
+`${str1} ${str2}`
+
+
+
+
+2.Arrow Function---->
+
+before-->
+function add(){
+    console.log("Hello");
+}
+after-->
+const add=()=>{
+    console.log("Hello");
+}
+
+
+
+
+3.Destructuring---->
+let address={
+    state:"Telangana",
+    city:"Hyderabad",
+    pin:505302
+}
+
+before-->
+let state=address.state;
+let city=address.city;
+let pin=address.pin
+
+after-->
+let {state,city,pin}=address
+
+With arrays---->
+var marks=[10,20]
+
+before-->
+let a=marks[0]
+let b=marks[1]
+
+after-->
+let [a,b]=marks
+
+{ } is used for objects Destructuring
+[ ] is used for arrays Destructuring
+
+
+
+
+4.Rest Parameter and Spread Operator---->
+
+Spread-->spread the elements into individual
+function add(a,b,c){
+    console.log(a+b+c);
+}
+let numbers=[1,2,3]
+add(...numbers)
+let [a,b,c]=[...numbers]
+var a=[1,2]
+var b=[3,4]
+var res=[...a,...b]
+
+
+Rest---->It will take care of rest of the parameters
+function showRest(a,b,...c){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+showRest(2,3,4,5,6)
+
+
+Module Exports
+        -->Named -- Distinguished by names
+        -->Default
+
+Named-->
+export let user={
+    name:"Tehith",
+    age:20
+}
+import { user } from './ModuleDemo';        -- Right
+import { userobj } from './ModuleDemo';     -- Wrong
+import { user as u } from './ModuleDemo';   -- Right
+
+Three ways for named:
+import { user } from './ModuleDemo';        -- Right
+import { user as u } from './ModuleDemo';   -- Right
+import { * as u } from './ModuleDemo';      -- Right
