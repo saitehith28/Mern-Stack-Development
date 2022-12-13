@@ -1,4 +1,4 @@
-import User from './User'
+// import User from './User'
 import Header from './Header'
 import Employee from './Employee';
 import EmployeeWithFunction from './EmployeeWithFunction';
@@ -9,6 +9,8 @@ import { SayHello as S } from './ModuleDemo';
 import * as me from './ModuleDemo'
 import GreetDefaultNewName from './ModuleDemo';
 import ToDo from './ToDo';
+import User from './components/User';
+import Article from './components/Article';
 
 function App() {
   const age=20;
@@ -39,8 +41,12 @@ function App() {
       <GreetDefaultNewName/> */}
 
       {/* <Employee company="Careerx" scores={[1,2,3,4]}/> */}
-      <Employee company="Careerx" scores={scores} add={add}/>
-      <ToDo/>
+      {/* <Employee company="Careerx" scores={scores} add={add}/>
+      <ToDo/> */}
+
+      {/* <User/> */}
+
+      <Article/>
     </div>
   );
 }
