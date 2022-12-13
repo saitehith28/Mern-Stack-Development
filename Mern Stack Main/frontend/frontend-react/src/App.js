@@ -7,9 +7,15 @@ import ES6 from './ES6-features';
 import { SayHi } from './ModuleDemo';
 import { SayHello as S } from './ModuleDemo';
 import * as me from './ModuleDemo'
+import GreetDefaultNewName from './ModuleDemo';
+import ToDo from './ToDo';
 
 function App() {
   const age=20;
+  var scores=[10,20,30,40];
+  function add(){
+    console.log("I am add function inside App Component")
+  }
   return (
     <div className="App">
       {/* <h1>My first react app is frontend-react app</h1>
@@ -25,11 +31,16 @@ function App() {
       {/* <h1>ES6 Features</h1>
       <ES6/> */}
 
-      <h1>Module Exports</h1>
+      {/* <h1>Module Exports</h1>
       <SayHi/>
       <S/>
       <me.SayHi/>
       <me.SayHello/>
+      <GreetDefaultNewName/> */}
+
+      {/* <Employee company="Careerx" scores={[1,2,3,4]}/> */}
+      <Employee company="Careerx" scores={scores} add={add}/>
+      <ToDo/>
     </div>
   );
 }

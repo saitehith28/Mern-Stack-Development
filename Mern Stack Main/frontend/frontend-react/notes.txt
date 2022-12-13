@@ -29,7 +29,8 @@ useState will return two functions
 one is value and another is to set that value
 
 
-state is a variable that will contain our component data.
+state is a variable or object that will contain our component data or that will store our local data.
+Whenever we change the state the react will re render the component again.
 
 We can modify the state data but cannot modify the props data.
 props is used to pass data from parent to child and state is for its local data.
@@ -159,3 +160,26 @@ Three ways for named:
 import { user } from './ModuleDemo';        -- Right
 import { user as u } from './ModuleDemo';   -- Right
 import { * as u } from './ModuleDemo';      -- Right
+
+Default-->
+We can use any name while importing
+
+function GreetDefault(){
+    return(
+        <h1>Default Export</h1>
+    )
+}
+export default GreetDefault;
+
+or
+
+export default function GreetDefault(){
+    return(
+        <h1>Default Export</h1>
+    )
+}
+
+import GreetDefault from './ModuleDemo';
+import GreetDefaultNewName from './ModuleDemo';
+
+both we can use
