@@ -17,6 +17,7 @@ class Employee extends React.Component{
         console.log(this.state.name);
         this.setState({name:this.state.changeName})
         this.props.add();
+        let changebutton = document.getElementById("button").value="";
     }
     handleChange(event){
         this.setState({changeName:event.target.value})
@@ -29,7 +30,7 @@ class Employee extends React.Component{
                 <h1>Age : {this.state.age}</h1>
                 <h1>Salary : {this.state.salary}</h1>
                 <h1>CompanyName : {this.props.company}</h1>
-                <input type="text" value={this.state.changeName} onChange={this.handleChange}></input>
+                <input type="text" value={this.state.changeName} onChange={this.handleChange} id="button" name="changebutton"></input>
                 <button onClick={this.changeName}>Change Name</button>
                 {/* <button onClick={this.changeName.bind(this)}>Change Name</button> */}
             </div>
