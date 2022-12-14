@@ -5,10 +5,11 @@ class User extends React.Component{
         this.state={
             name:"",
         }
-        this.handleClick1=this.handleClick1.bind(this);
+        // this.handleClick1=this.handleClick1.bind(this);
+        this.sai=this.handleClick1.bind(this);
     }
 
-    handleClick1(event){
+    sai(event){
         console.log("Clicked-1",event);
         this.setState({name:"Tehith"})
     }
@@ -28,7 +29,7 @@ class User extends React.Component{
         return(
             <div>
                 <h1>Hello I am user Component {this.state.name}</h1>
-                <button onClick={this.handleClick1}>Click1</button>
+                <button onClick={this.sai}>Click1</button>
                 <button onClick={this.handleClick2.bind(this)}>Click2</button>
                 <button onClick={(e)=>this.handleClick3(e)}>Click3</button>
                 <button onClick={this.handleClick4}>Click4</button>

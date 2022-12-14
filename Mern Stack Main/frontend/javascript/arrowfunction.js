@@ -11,3 +11,7 @@ let user={
 }
 user.show();
 user.show2();
+function Click(){
+    console.log("Clicked");
+    console.log(this);
+}

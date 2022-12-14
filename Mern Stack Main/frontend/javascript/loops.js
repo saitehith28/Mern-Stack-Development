@@ -68,4 +68,4 @@ function checkEven(){
         output.innerHTML="Number is Odd"
     }
 }
-checkEven();
+// checkEven();

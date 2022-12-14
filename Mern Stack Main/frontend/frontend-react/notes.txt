@@ -187,3 +187,5 @@ both we can use
 The behaviour of this is completely different in arrow function than in normal function.
 
 This is the difference between normal function and arrow function.
+
+synthateic event react uses 
