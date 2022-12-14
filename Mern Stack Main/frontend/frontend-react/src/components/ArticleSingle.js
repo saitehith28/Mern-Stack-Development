@@ -1,6 +1,5 @@
 import React from 'react';
-import ArticleList from './ArticleList';
-class Article extends React.Component {
+class ArticleSingle extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -72,13 +71,32 @@ class Article extends React.Component {
                         </div>
                         <button type="submit" className='btn btn-primary'>Submit</button>
                     </form>
-                </div>
-                <div className='row'>
-                    <ArticleList articles={this.state.articles}/>
+                    <h1>Articles Data</h1>
+                    {this.state.articles.length}
+                    <table class="table-primary">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Content</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                this.state.articles.map((item)=>{
+                                    return <tr>
+                                        <td>{item.id}</td>
+                                        <td>{item.title}</td>
+                                        <td>{item.content}</td>
+                                    </tr>
+                                })
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
         )
     }
 }
 
-export default Article;
+export default ArticleSingle;

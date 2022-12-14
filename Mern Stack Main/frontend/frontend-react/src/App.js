@@ -11,6 +11,7 @@ import GreetDefaultNewName from './ModuleDemo';
 import ToDo from './ToDo';
 import User from './components/User';
 import Article from './components/Article';
+import ArticleSingle from './components/ArticleSingle';
 
 function App() {
   const age=20;
@@ -46,6 +47,7 @@ function App() {
 
       {/* <User/> */}
 
+      {/* <ArticleSingle/> */}
       <Article/>
     </div>
   );
