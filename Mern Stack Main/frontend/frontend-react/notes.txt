@@ -189,3 +189,35 @@ The behaviour of this is completely different in arrow function than in normal f
 This is the difference between normal function and arrow function.
 
 synthateic event react uses 
+
+Lifecycle methods are only applicable for class based components.
+
+Whenever you change the state react will re render your components.
+
+3 LifeCycle Methods---->
+
+-->  Mounting means just putting the element into webpage.
+it will be done using 4 methods
+
+->constructor
+->getDerivedStateFromProps
+->render
+->componentDidMount
+
+-->  Update means changing in state or props
+it will be done using 4 methods
+
+->getDerivedStateFromProps
+->shouldComponentUpdate
+->render
+->getSnapShotBeforeUpdate
+->componentDidUpdate
+
+I am in parent Constructor
+Parent.js:12 I am in parent getDerivedStateFromProps
+Parent.js:22 I am in parent Render
+Child.js:4 I am in child Constructor
+Child.js:11 I am in child getDerivedStateFromProps
+Child.js:27 I am in child Render
+Child.js:18 I am in child componentDidMount
+Parent.js:16 I am in parent componentDidMount

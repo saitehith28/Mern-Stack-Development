@@ -12,6 +12,8 @@ import ToDo from './ToDo';
 import User from './components/User';
 import Article from './components/Article';
 import ArticleSingle from './components/ArticleSingle';
+import Counter from './components/Counter';
+import Parent from './components/Parent';
 
 function App() {
   const age=20;
@@ -47,8 +49,12 @@ function App() {
 
       {/* <User/> */}
 
-      {/* <ArticleSingle/> */}
-      <Article/>
+      {/* <ArticleSingle/>
+      <Article/> */}
+
+      {/* <Counter/> */}
+
+      <Parent/>
     </div>
   );
 }
