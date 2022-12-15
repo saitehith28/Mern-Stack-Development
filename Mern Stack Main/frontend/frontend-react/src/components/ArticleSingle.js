@@ -35,6 +35,12 @@ class ArticleSingle extends React.Component {
         tempArticles.push(article);
         this.setState({ articles: tempArticles ,article:{...article,id:"",title:"",content:""}});
     }
+    // add(){
+    //     console.log("Hello");
+    //     this.state.article.id="";
+    //     this.state.article.title="";
+    //     this.state.article.content="";
+    // }
 
     saveDataNew(e) {
         e.preventDefault();

@@ -14,6 +14,8 @@ import Article from './components/Article';
 import ArticleSingle from './components/ArticleSingle';
 import Counter from './components/Counter';
 import Parent from './components/Parent';
+import ParentData from './components/ParentData';
+import UpdateArticle from './components/UpdateArticles';
 
 function App() {
   const age=20;
@@ -54,7 +56,12 @@ function App() {
 
       {/* <Counter/> */}
 
-      <Parent/>
+      {/* <Parent/> */}
+
+      {/* <ParentData/> */}
+
+      {/* <ArticleSingle/> */}
+      <UpdateArticle/>
     </div>
   );
 }

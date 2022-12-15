@@ -214,10 +214,24 @@ it will be done using 4 methods
 ->componentDidUpdate
 
 I am in parent Constructor
-Parent.js:12 I am in parent getDerivedStateFromProps
-Parent.js:22 I am in parent Render
-Child.js:4 I am in child Constructor
-Child.js:11 I am in child getDerivedStateFromProps
-Child.js:27 I am in child Render
-Child.js:18 I am in child componentDidMount
-Parent.js:16 I am in parent componentDidMount
+I am in parent getDerivedStateFromProps
+I am in parent Render
+I am in child Constructor
+I am in child getDerivedStateFromProps
+I am in child Render
+I am in child componentDidMount
+I am in parent componentDidMount
+
+
+
+I am in parent getDerivedStateFromProps
+I am in parent Render
+I am in child getDerivedStateFromProps
+I am in child shouldComponentUpdate
+I am in child Render
+I am in child getSnapshotBeforeUpdate
+{count: 1} {}
+I am in child componentDidUpdate
+
+-->Unmounting
+->componentWillUnmount

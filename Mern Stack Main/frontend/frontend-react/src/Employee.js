@@ -16,8 +16,9 @@ class Employee extends React.Component{
     changeName(){
         console.log(this.state.name);
         this.setState({name:this.state.changeName})
-        this.props.add();
-        let changebutton = document.getElementById("button").value="";
+        // this.setState({name:this.state.changeName,changeName:""})
+        // let changebutton = document.getElementById("button").value="";
+        this.state.changeName="";
     }
     handleChange(event){
         this.setState({changeName:event.target.value})

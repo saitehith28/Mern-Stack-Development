@@ -5,7 +5,8 @@ class Parent extends React.Component{
         console.log("I am in parent Constructor");
         super();
         this.state={
-            count:0
+            count:0,
+            show:true
         }
     }
     static getDerivedStateFromProps(props,state){
@@ -18,13 +19,17 @@ class Parent extends React.Component{
     increment(){
         this.setState({count:this.state.count+1})
     }
+    hide(){
+        this.setState({show:!this.state.show});
+    }
     render(){
         console.log("I am in parent Render");
         return(
             <div>
                 <h1>Hello I am in Parent and Count {this.state.count}</h1>
                 <button onClick={()=>this.increment()} className='btn btn-success'>Increment</button>
-                <Child count={this.state.count}/>
+                <button onClick={()=>this.hide()}>Hide Child</button>
+                {this.state.show && <Child count={this.state.count}/>}
             </div>
         )
     }

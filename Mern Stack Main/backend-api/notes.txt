@@ -1,0 +1,20 @@
+First way to create package.json is npm init
+It contains the description about our project
+We can mention the start script
+
+put is for entire data
+patch is for portion of data
+
+1-->
+mkdir backend-api
+cd backend-api
+npm init
+change package json file
+"start":"node index.js"
+
+2-->
+npm install express  or  npm install express --save
+express --version
+package-lock.json and node_modules will add automatically
+
+3-->
