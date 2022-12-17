@@ -16,6 +16,10 @@ import Counter from './components/Counter';
 import Parent from './components/Parent';
 import ParentData from './components/ParentData';
 import UpdateArticle from './components/UpdateArticles';
+import CounterF from './components/functionalcomponents/CounterF';
+import EmpForm from './components/functionalcomponents/EmpForm';
+import AllHook from './Hooks/AllHook';
+import Assignments from './components/Assignment/Assignments';
 
 function App() {
   const age=20;
@@ -60,8 +64,15 @@ function App() {
 
       {/* <ParentData/> */}
 
-      {/* <ArticleSingle/> */}
-      <UpdateArticle/>
+      {/* <UpdateArticle/> */}
+
+      {/* <CounterF name="Tehith"/> */}
+
+      {/* <EmpForm/> */}
+
+      {/* <AllHook/> */}
+
+      {/* <Assignments/> */}
     </div>
   );
 }

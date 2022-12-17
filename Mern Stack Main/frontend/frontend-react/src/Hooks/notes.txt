@@ -1,0 +1,32 @@
+useState --> is used to maintain local data in functional components.
+
+useEffect --> is used to call side effect calls such as api calls and db calls.
+
+props drilling --> unnecessary we are passing data though that component is not needed.
+
+useContext --> is used to overcome props drilling
+
+useReducer --> is similar to useState and it allows for custom state logic and helps you manage complex state logic.
+
+
+
+useEffect(()=>{
+
+})              no dependency --> it will call on every render
+
+useEffect(()=>{
+
+},[])           empty dependency array --> it will call on very first   render and stop
+
+useEffect(()=>{
+
+},[name])       dependency array will state or props --> it will get called on very first render as well as whenever we change the dependent
+variables.
+
+In js objects are based on reference
+objects are reference type
+
+React follows referential integrity
+
+props drilling --> unnecessary we are passing data though that component is not needed
+

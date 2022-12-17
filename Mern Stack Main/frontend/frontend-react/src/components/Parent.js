@@ -24,12 +24,20 @@ class Parent extends React.Component{
     }
     render(){
         console.log("I am in parent Render");
+        // let child="";
+        // if(this.state.show){
+        //     child=<Child count={this.state.count}/>
+        // }
+        // else{
+        //     child=null;
+        // }
         return(
             <div>
                 <h1>Hello I am in Parent and Count {this.state.count}</h1>
                 <button onClick={()=>this.increment()} className='btn btn-success'>Increment</button>
                 <button onClick={()=>this.hide()}>Hide Child</button>
                 {this.state.show && <Child count={this.state.count}/>}
+                {/* {child} */}
             </div>
         )
     }
