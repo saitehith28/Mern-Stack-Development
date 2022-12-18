@@ -20,6 +20,7 @@ import CounterF from './components/functionalcomponents/CounterF';
 import EmpForm from './components/functionalcomponents/EmpForm';
 import AllHook from './Hooks/AllHook';
 import Assignments from './components/Assignment/Assignments';
+import MainApp from './MainApp';
 
 function App() {
   const age=20;
@@ -73,6 +74,8 @@ function App() {
       {/* <AllHook/> */}
 
       {/* <Assignments/> */}
+
+      <MainApp/>
     </div>
   );
 }

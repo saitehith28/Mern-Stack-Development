@@ -235,3 +235,35 @@ I am in child componentDidUpdate
 
 -->Unmounting
 ->componentWillUnmount
+
+
+React Router --> React Router is a package , it enables router functionality in your application
+
+npm install react-router-dom  --save
+
+It gives four things BrowserRouter , Routes , Route , Link
+
+1-->Install the react-router-dom
+2-->Load the BrowserRouter,Router,Route,Link from react-router-dom
+3-->Create thePages/Components
+4-->Import all Components which are part of Routes
+5-->Configure Routes through
+<BrowserRouter>
+    <Routes>
+        <Route path="/" element={<COmponentName/>}></Route>
+        <Route path="/course"></Route>
+        <Route path="/student"></Route>
+    </Routes>
+</BrowserRouter>
+
+Create Header with navigations and load it in MainApp.js
+Write code Student Page
+Write code in Student List
+
+BrowserRouter --> Browser Functionality like push history and all
+Routes --> kind of array we will configure all route
+Route --> provide path and element , where we want to go
+Link --> 
+
+Reason for using Link instead of <a> is 
+if we use <a> the Browser default functionality is to reload the page when we navigate from Student Page to Course Page

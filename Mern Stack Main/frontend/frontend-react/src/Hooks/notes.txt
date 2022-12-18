@@ -4,11 +4,11 @@ useEffect --> is used to call side effect calls such as api calls and db calls.
 
 props drilling --> unnecessary we are passing data though that component is not needed.
 
-useContext --> is used to overcome props drilling
+useContext --> is used to overcome props drilling.
 
 useReducer --> is similar to useState and it allows for custom state logic and helps you manage complex state logic.
 
-
+useRef --> is used to interact with dom.
 
 useEffect(()=>{
 
