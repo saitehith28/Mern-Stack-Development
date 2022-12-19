@@ -20,3 +20,5 @@ package-lock.json and node_modules will add automatically
 3-->
 
 npm install body-parser --save for json passing data
+
+npm install cors --save

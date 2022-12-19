@@ -18,6 +18,12 @@ function Header(){
               <li className="nav-item">
                 <Link className="nav-link" to="/student">Student</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/users">Users</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/userscrud">UsersCrud</Link>
+              </li>
             </ul>
             <form className="d-flex">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

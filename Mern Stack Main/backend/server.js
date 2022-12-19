@@ -12,6 +12,7 @@ var users=[
     }
 ]
 var server = http.createServer(function(req,res){
+    res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
     console.log("Url is ",req.url," Method is ",req.method)
     if(req.url==='/'){
         console.log("Hello in / program");
@@ -22,7 +23,7 @@ var server = http.createServer(function(req,res){
         res.writeHead(200,{content:"application/json"})
         res.end(JSON.stringify({Name:"Tehith",id:240}))
     }
-    else if(req.url==='/user'){
+    else if(req.url==='/users'){
         res.writeHead(200,{content:"application/json"})
         res.end(JSON.stringify(users))
     }

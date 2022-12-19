@@ -4,6 +4,8 @@ import CoursePage from "./Pages/CoursePage";
 import StudentPage from "./Pages/StudentPage";
 import Header from "./Pages/Header";
 import StudentList from "./Pages/StudentList";
+import UserPage from "./Pages/UserPage";
+import UsersCrud from "./Pages/UsersCrud";
 function MainApp() {
   return (
     <div className="App">
@@ -14,6 +16,8 @@ function MainApp() {
             <Route path="/course" element={<CoursePage/>}></Route>
             <Route path="/student" element={<StudentPage/>}></Route>
             <Route path="/studentlist" element={<StudentList/>}></Route>
+            <Route path="/users" element={<UserPage/>}></Route>
+            <Route path="/userscrud" element={<UsersCrud/>}></Route>
           </Routes>
         </BrowserRouter>
     </div>
