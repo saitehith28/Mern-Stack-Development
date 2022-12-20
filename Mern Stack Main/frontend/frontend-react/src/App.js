@@ -22,6 +22,11 @@ import AllHook from './Hooks/AllHook';
 import Assignments from './components/Assignment/Assignments';
 import MainApp from './MainApp';
 
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import rootReducer from './Reducers/RootReducer';
+const store=createStore(rootReducer);
+
 function App() {
   const age=20;
   var scores=[10,20,30,40];
@@ -75,7 +80,11 @@ function App() {
 
       {/* <Assignments/> */}
 
-      <MainApp/>
+      {/* <MainApp/> */}
+
+      <Provider store={store}>
+        <MainApp/>
+      </Provider>
     </div>
   );
 }

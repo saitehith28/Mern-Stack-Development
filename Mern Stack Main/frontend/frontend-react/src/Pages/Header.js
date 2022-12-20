@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+
+
 function Header(){
     return(
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -14,6 +16,9 @@ function Header(){
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/course">Course</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/courselist">Course List</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/student">Student</Link>

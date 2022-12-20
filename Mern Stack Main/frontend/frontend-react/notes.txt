@@ -267,3 +267,16 @@ Link -->
 
 Reason for using Link instead of <a> is 
 if we use <a> the Browser default functionality is to reload the page when we navigate from Student Page to Course Page
+
+Redux-->    react-redux we need to install
+It is a state management library
+Why redux?
+
+When you develop some complex applications to manage state , through usecontext and props drilling , to maintain large set of data in complex application is difficult with useContext and all , so we use redux third part tool to maintain
+Install redux package and connfigure redux tool
+
+1--> npm install redux react-redux --save
+2--> configure store
+3--> create reducer
+
+

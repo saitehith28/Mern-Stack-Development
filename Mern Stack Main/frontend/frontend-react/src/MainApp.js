@@ -6,6 +6,7 @@ import Header from "./Pages/Header";
 import StudentList from "./Pages/StudentList";
 import UserPage from "./Pages/UserPage";
 import UsersCrud from "./Pages/UsersCrud";
+import CourseListPage from "./Pages/CourseListPage";
 function MainApp() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function MainApp() {
             <Route path="/studentlist" element={<StudentList/>}></Route>
             <Route path="/users" element={<UserPage/>}></Route>
             <Route path="/userscrud" element={<UsersCrud/>}></Route>
+            <Route path="/courselist" element={<CourseListPage/>}></Route>
           </Routes>
         </BrowserRouter>
     </div>
