@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 function UsersCrud() {
     const [user,setUser]=useState({});
     const [users, setUsers] = useState([]);
+    const [isEdit,setisEdit]=useState(false);
     function getUsersFromServer(){
         fetch("http://localhost:5000/users/").then(function (res) {
             return res.json();
@@ -38,10 +39,18 @@ function UsersCrud() {
     }
     const createUser=()=>{
         console.log(user);
-        fetch("http://localhost:5000/users/create/",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(user)}).then(function(res){
+        if(isEdit){
+            fetch(`http://localhost:5000/users/${user.id}/update`,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(user)}).then(function(res){
+            console.log("User Updated Successfully");
+            getUsersFromServer();
+        })
+        }
+        else{
+            fetch("http://localhost:5000/users/create/",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(user)}).then(function(res){
             console.log("User Created Successfully");
             getUsersFromServer();
         })
+        }
         setUser((prev)=>({
             ...prev,
             id:"",
@@ -67,6 +76,8 @@ function UsersCrud() {
             age:user.age,
             phone:user.phone
         }))
+        //setUser(user);
+        setisEdit(true);
     }
     return (
         <div>

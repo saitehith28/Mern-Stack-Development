@@ -95,3 +95,27 @@ asg:create registration form
 create a navigation menu bar horizontally
 
 home aboutus contactus login/signup
+
+
+let a={}
+let b=JSON.stringify({key:"b"})
+let c={key:"c"}
+
+a[b]=456;   //a["ram"]=200
+a[c]=123;
+console.log(a[b]);
+
+a={
+    "[object object]":456,
+    "[object object]":123
+}
+
+a={
+    "ram":100,
+    "ram":200
+}
+let email="test1@gmail.com"
+user={
+
+}
+user[email]="test@gmail.com"

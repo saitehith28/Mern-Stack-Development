@@ -7,10 +7,11 @@ import StudentList from "./Pages/StudentList";
 import UserPage from "./Pages/UserPage";
 import UsersCrud from "./Pages/UsersCrud";
 import CourseListPage from "./Pages/CourseListPage";
+import Pagination from "./components/Pagination";
 function MainApp() {
   return (
     <div className="App">
-        <BrowserRouter>
+        {/* <BrowserRouter>
         <Header/>
           <Routes>
             <Route path="/employee" element={<EmployeePage/>}></Route>
@@ -21,7 +22,8 @@ function MainApp() {
             <Route path="/userscrud" element={<UsersCrud/>}></Route>
             <Route path="/courselist" element={<CourseListPage/>}></Route>
           </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <Pagination/>
     </div>
   );
 }
