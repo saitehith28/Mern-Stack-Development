@@ -5,12 +5,6 @@ var mongoose=require("mongoose");
 var app=express();
 var port=5000;
 // mongoose.connect("mongodb://localhost:27017/emp_Curd")
-mongoose.connect("mongodb://saitehith:Tehith028@ac-smptuwp-shard-00-00.xphvdxi.mongodb.net:27017,ac-smptuwp-shard-00-01.xphvdxi.mongodb.net:27017,ac-smptuwp-shard-00-02.xphvdxi.mongodb.net:27017/?ssl=true&replicaSet=atlas-r94ltv-shard-0&authSource=admin&retryWrites=true&w=majority", { 
-    useNewUrlParser: true, 
-    useUnifiedTopology: true
-}, () => { 
-    console.log('connected to database myDb ;)') 
-})
 
 
 // app.use(function(req,res,next){
