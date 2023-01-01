@@ -119,3 +119,5 @@ user={
 
 }
 user[email]="test@gmail.com"
+
+mongodb+srv://saitehith:Tehith028@employee.oaiwqlz.mongodb.net/?retryWrites=true&w=majority
